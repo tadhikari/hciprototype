@@ -63,3 +63,12 @@ changeLanguage = function(language,placement){
     changeLanguageSelectionOnScreen(placement);
     loadPageText();
 }
+
+changePage = function(nextPage){
+
+    iframe = self.parent.document.getElementById('childrenScreens');
+
+    iframe.src = './Screens/Questions.html'
+
+
+}
