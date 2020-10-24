@@ -11,6 +11,7 @@ window.onload = (event) => {
         console.log(languageSelected);
         console.log(currentPage);
 
+        console.log(self.text)
 
     
 };
@@ -22,10 +23,9 @@ loadPageText = function() {
         let h2 = document.getElementById('head2');
         let next = document.getElementById('next');
 
-        console.log(h1.innerHTML);
-        console.log(self.pageName);
+        
         h1.innerHTML = self.parent.text[languageSelected][currentPage]['h1'];
-        h2.innerHTML = text[languageSelected][currentPage]['h2'];
+        h2.innerHTML = self.parent.text[languageSelected][currentPage]['h2'];
         //next.innerHTML = text[languageSelected][currentPage]['h2'];
         
 
