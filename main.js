@@ -1,9 +1,8 @@
 
 // class level variables
-var languageSelected = null;
-var currentPage = null;
-var currentLanguageTag = null;
-var welcome, parent = null;
+
+self.languageSelected = null;
+self.currentLanguageTag = null;
 
 self.text = {
 

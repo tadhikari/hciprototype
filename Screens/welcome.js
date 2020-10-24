@@ -5,15 +5,29 @@ var languageSelected = null;
 
 window.onload = (event) => {
     
-        currentLanguageTag = document.getElementsByClassName('languageType')[0];
-        currentLanguageTag.classList.add('selectedLanguage');
+        
+        
         currentPage = "WELCOME";
 
-        languageSelected = self.parent.languageSelected;
-        console.log(currentPage);
+        if(self.parent.languageSelected==null){
+            languageSelected = "ENGLISH";
+            self.parent.languageSelected = languageSelected;
+        }
+        else {
+            languageSelected = self.parent.languageSelected;
+        }
+        
+        if(self.parent.currentLanguageTag == null) {
+            currentLanguageTag = document.getElementsByClassName('languageType')[0];
+            currentLanguageTag.classList.add('selectedLanguage');
+            self.parent.currentLanguageTag = currentLanguageTag;
+        }
+        else {
+            currentLanguageTag = self.parent.currentLanguageTag;
+        }
 
-        console.log(self.parent.text)
-
+        loadPageText();
+        console.log(languageSelected);
     
 };
 
@@ -41,3 +55,11 @@ changeLanguageSelectionOnScreen = function(placement){
     currentLanguageTag.classList.add('selectedLanguage');
 
 };
+
+
+changeLanguage = function(language,placement){
+    languageSelected = language;
+    //console.log(this);
+    changeLanguageSelectionOnScreen(placement);
+    loadPageText();
+}

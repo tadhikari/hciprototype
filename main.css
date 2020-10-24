@@ -93,6 +93,13 @@ section > div {
     height: 80%;
 }
 
+
+#next {
+
+    margin: auto auto;
+    margin-top: 20px;
+}
+
 .languageType {
     height: 150px;
     width: 300px;
