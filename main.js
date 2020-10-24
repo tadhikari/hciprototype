@@ -14,16 +14,46 @@ self.text = {
 
         'HOME':`Are you sure you want to return to the Home Screen?
         If you are half way in the payment process, the money will be refunded to you.`,
-        'NEXT':'Next',
+        
         'WELCOME':{'h1':'Welcome To The Smart Vending Machine',
-                   'h2':'Please choose the language of your choice to proceed'},
+                   'h2':'Please choose the language of your choice to proceed','NEXT':'Next'},
         'QUESTION':{},
         'PAYMENT':{}
     },
     'SPANISH':{
 
+         'HELP':`Gracias por utilizar esta máquina expendedora.
+        Si tiene alguna pregunta o inquietud,
+        póngase en contacto con nuestro equipo de soporte técnico en
+        888-888-8888 o smartvending@email.com`,
+
+        'HOME':`¿Está seguro de que desea volver a la pantalla de inicio?
+        Si se encuentra a la mitad del proceso de pago, se le reembolsará el dinero.`,
+        
+        'WELCOME':{'h1':`Bienvenido a la máquina expendedora inteligente`,
+                   'h2':`Elija el idioma de su elección para continuar`,
+                   'NEXT':'Próxima',},
+        'QUESTION':{},
+        'PAYMENT':{}
+
     },
     'RUSSIAN':{
+
+
+         'HELP':`Спасибо за использование этого торгового автомата.
+        Если у вас есть вопросы или проблемы,
+        свяжитесь с нашей службой технической поддержки по адресу
+        888-888-8888 или smartvending@email.com`,
+
+        'HOME':`Вы уверены, что хотите вернуться на главный экран?
+        Если вы на полпути в процессе оплаты, деньги будут вам возвращены.`,
+        
+        'WELCOME':{'h1':`Добро пожаловать в умный торговый автомат`,
+                   'h2':`Пожалуйста, выберите желаемый язык, чтобы продолжить`,
+                   'NEXT':'следующий',},
+        'QUESTION':{},
+        'PAYMENT':{}
+
 
     }
 
@@ -33,70 +63,12 @@ self.text = {
 //     if
 // }
 
-window.onload = (event) => {
-    
-    
-   self.languageSelected = 'ENGLISH';
-    //primaryInitilization
-
-    
-    
-};
-
-languageBoxSelection = function(tag) {
-    
-};
-
-
-init = function(){
-
-    
-    primaryInitilization = true;    
-    
-
-}
-
-
-changeLanguage = function(language,placement){
-    languageSelected = language;
-    //console.log(this);
-    changeLanguageSelectionOnScreen(placement);
-    loadPageText();
-}
-
-
-
-
-loadPageText = function() {
-
-        if(currentPage == 'WELCOME'){
-
-            
-            let h1 = self.document.getElementById('head1');
-            let h2 = self.document.getElementById('head2');
-            let next = self.document.getElementById('next');
-
-            console.log(h1.innerHTML);
-            console.log(self.pageName);
-            h1.innerHTML = text[languageSelected][currentPage]['h1'];
-            h2.innerHTML = text[languageSelected][currentPage]['h2'];
-            //next.innerHTML = text[languageSelected][currentPage]['h2'];
-            
-        }
-
-
-
-}
-
-
-
-
-
-
-
 helpbox = function() {
+
+    console.log(self.languageSelected);
+
     alert(`
-        ${text[languageSelected]['HELP']}
+        ${self.text[self.languageSelected]['HELP']}
         
     `);
 }

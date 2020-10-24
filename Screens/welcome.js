@@ -2,6 +2,8 @@
 
 
 var languageSelected = null;
+var currentLanguageTag = null;
+var currentPage = null;
 
 window.onload = (event) => {
     
@@ -41,25 +43,23 @@ loadPageText = function() {
         
         h1.innerHTML = self.parent.text[languageSelected][currentPage]['h1'];
         h2.innerHTML = self.parent.text[languageSelected][currentPage]['h2'];
-        //next.innerHTML = text[languageSelected][currentPage]['h2'];
+        next.innerText = self.parent.text[languageSelected][currentPage]['NEXT'];
         
 
 
 }
 
 changeLanguageSelectionOnScreen = function(placement){
-    //document.getElementsByClassName('');
     currentLanguageTag.classList.remove('selectedLanguage');
     let languages = document.getElementsByClassName('languageType');
     currentLanguageTag = languages[placement];
     currentLanguageTag.classList.add('selectedLanguage');
-
 };
 
 
 changeLanguage = function(language,placement){
     languageSelected = language;
-    //console.log(this);
+    self.parent.languageSelected = languageSelected;
     changeLanguageSelectionOnScreen(placement);
     loadPageText();
 }
