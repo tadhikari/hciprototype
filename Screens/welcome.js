@@ -1,17 +1,18 @@
 
 
 
+var languageSelected = null;
+
 window.onload = (event) => {
     
         currentLanguageTag = document.getElementsByClassName('languageType')[0];
         currentLanguageTag.classList.add('selectedLanguage');
         currentPage = "WELCOME";
-        loadPageText();
 
-        console.log(languageSelected);
+        languageSelected = self.parent.languageSelected;
         console.log(currentPage);
 
-        console.log(self.text)
+        console.log(self.parent.text)
 
     
 };

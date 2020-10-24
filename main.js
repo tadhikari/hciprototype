@@ -37,20 +37,7 @@ self.text = {
 window.onload = (event) => {
     
     
-    if(self.parent.primaryInitilization!=undefined && self.parent.primaryInitilization){
-        languageSelected = "ENGLISH";
-    }
-   
-   if (self.pageName == 'WELCOME'){
-        currentLanguageTag = document.getElementsByClassName('languageType')[0];
-        currentLanguageTag.classList.add('selectedLanguage');
-        currentPage = "WELCOME";
-        loadPageText();
-    }
-
-    console.log(languageSelected);
-    console.log(currentPage);
-
+   self.languageSelected = 'ENGLISH';
     //primaryInitilization
 
     
