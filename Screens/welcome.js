@@ -1,0 +1,42 @@
+
+
+
+window.onload = (event) => {
+    
+        currentLanguageTag = document.getElementsByClassName('languageType')[0];
+        currentLanguageTag.classList.add('selectedLanguage');
+        currentPage = "WELCOME";
+        loadPageText();
+
+        console.log(languageSelected);
+        console.log(currentPage);
+
+
+    
+};
+
+
+loadPageText = function() {
+
+        let h1 = document.getElementById('head1');
+        let h2 = document.getElementById('head2');
+        let next = document.getElementById('next');
+
+        console.log(h1.innerHTML);
+        console.log(self.pageName);
+        h1.innerHTML = text[languageSelected][currentPage]['h1'];
+        h2.innerHTML = text[languageSelected][currentPage]['h2'];
+        //next.innerHTML = text[languageSelected][currentPage]['h2'];
+        
+
+
+}
+
+changeLanguageSelectionOnScreen = function(placement){
+    //document.getElementsByClassName('');
+    currentLanguageTag.classList.remove('selectedLanguage');
+    let languages = document.getElementsByClassName('languageType');
+    currentLanguageTag = languages[placement];
+    currentLanguageTag.classList.add('selectedLanguage');
+
+};

@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+.bordered {
+    border: 1px solid #d3d3d3;
+}
+
+
+
+html{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+body {
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+#infoSection {
+
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+    position: absolute;
+    background-color: rgba(128,128,128,0.5);
+    z-index: 999;
+    
+}
+
+#infoText {
+
+    background-color: white;
+    width: 50%;
+    height: 200px;
+    margin: auto auto;
+    margin-top: 10%;;
+}
+
+#screenTopNavigation {
+
+    height: 50px;
+    background-color:#009999;
+    position: relative;
+}
+
+nav > div {
+
+    position: absolute;
+    right: 20px;
+
+}
+
+
+
+h1, h2 {
+    text-align: center;
+}
+
+.centerAlignContent {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+}
+
+
+
+section > div {
+    width: 100%;
+    height: 100%;
+}
+
+#mainBodyContent{
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+#childrenScreens {
+    width: 100%;
+    height: 80%;
+}
+
+.languageType {
+    height: 150px;
+    width: 300px;
+    margin: auto auto;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 35px;
+    border-radius: 25px;
+}
+
+.languageType:hover {
+
+    background-color: orange;
+    opacity: 0.5;
+}
+
+.selectedLanguage {
+
+    background-color: orange;
+
+}
+
+
+p.languageType:nth-of-type(2) {
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
