@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Smart Camera Vending Machine</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <meta charset="utf-16"/>
+        <link rel='stylesheet' type='text/css' media='screen' href='../main.css'>
+    </head>
+    <body>
+        <section class="centerAlignContent">
+            <h1 id="head1"></h1>
+            <h2 id="head2"></h2>
+            <div class="wrapper">
+                <p class="languageType bordered clickable" onclick="changeLanguage('ENGLISH',0)" id="engl">English</p>
+                <p class="languageType bordered clickable" onclick="changeLanguage('SPANISH',1)" id="span">Española</p>
+                <p class="languageType bordered clickable" onclick="changeLanguage('RUSSIAN',2)" id="russ">Pусский</p> 
+                <button id="next" onclick="changePage('QUESTIONS')"></button>
+            </div>
+        </section> 
+    </body>
+     <script src='welcome.js'></script>
+     
+   
+</html>

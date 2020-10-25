@@ -8,11 +8,9 @@ window.onload = (event) => {
 
 
 	self.parent.currentPage = 'QUESTION';
+	self.parent.questionAnswer = []; //resetting previously answered questions
 	loadPageText();
 	
-
-
-
 
 }
 
@@ -71,7 +69,9 @@ loadPageText = function() {
 
 nextPage = function() {
 
+	iframe = self.parent.document.getElementById('childrenScreens');
 
+    iframe.src = './Screens/cameras.html'
 
 }
 

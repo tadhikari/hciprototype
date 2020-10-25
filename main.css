@@ -136,7 +136,22 @@ p.languageType:nth-of-type(2) {
 }
 
 
+/*cameras screen css*/
 
+
+.grid-container {
+  display: grid;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  grid-template-columns: auto auto;
+  margin-left: 20%;
+}
+
+.grid-item {
+
+    border: 1px solid black;
+    width: 200px;
+}
 
 
 /*feedback css*/
@@ -208,3 +223,4 @@ fieldset {
     margin: auto auto;
 
 }
+
