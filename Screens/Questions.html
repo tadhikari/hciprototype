@@ -10,40 +10,42 @@
         <section class="centerAlignContent">
             <h1 id="head1">Please answer the following questions</h1>
             <h2 id="head2">Based on your response, the system will determine best camera picks for you</h2>
+			<form action="selection.html" class="wrapper centered">
             <div class="wrapper centered">
                 <div id="qstnSet1">
                     <h4>Select your level of proficiency</h4>
                     <span>
-                        <input type="radio" name="q1" id="beginner">
+                        <input type="radio" name="q1" id="beginner" value="beginner">
                         <label for="beginner">Beginner</label><br>
-                        <input type="radio" name="q1">
-                        <label for="beginner">Intermediate</label><br>
-                        <input type="radio" name="q1">
-                        <label for="beginner">Advanced</label><br>
+                        <input type="radio" name="q1" value="Intermediate">
+                        <label for="Intermediate">Intermediate</label><br>
+                        <input type="radio" name="q1" value="Advanced">
+                        <label for="Advanced">Advanced</label><br>
                     </span>
                 </div>
                 <div id="qstnSet2">
                     <h4>Select the purpose of the camera</h4>
                     <span>
-                        <input type="radio" name="q2" id="beginner">
+                        <input type="radio" name="q2" id="beginner" value="Vlogging">
                         <label for="beginner">Vlogging</label><br>
-                        <input type="radio" name="q2">
+                        <input type="radio" name="q2" value="Travel">
                         <label for="beginner">Travel</label><br>
-                        <input type="radio" name="q2">
-                        <label for="beginner">Movie Making</label><br>
+                        <input type="radio" name="q2" value="Movie-Making">
+                        <label for="beginner">Movie-Making</label><br>
                     </span>
                 </div>
                 <div id="qstnSet3">
                     <h4>Select the Tier of the camera</h4>
                     <span>
-                        <input type="radio" name="q3" id="beginner">
+                        <input type="radio" name="q3" id="beginner" value="Basic">
                         <label for="beginner">Basic</label><br>
-                        <input type="radio" name="q3">
+                        <input type="radio" name="q3" value="Intermediate">
                         <label for="beginner">Intermediate</label><br>
-                        <input type="radio" name="q3">
+                        <input type="radio" name="q3" value="High-End">
                         <label for="beginner">High-End</label><br>
                     </span>
                 </div>
+				</form>	
                 <br>
                 <button>Back</button>
                 <button>Next</button>

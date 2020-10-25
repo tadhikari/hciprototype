@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Smart Camera Vending Machine</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <meta charset="utf-16"/>
+        <link rel='stylesheet' type='text/css' media='screen' href='../main.css'>
+    </head>
+	<script src='selection.js'></script>
+    <body onload="setSelectionText();">
+        <section class="centerAlignContent">
+            <h1 id="head1"></h1>
+            <h2 id="head2"></h2>
+            <div class="wrapper centered">
+                <p>You are purchasing:<span id="prof">Prof</span> <span id="purp">purp</span> <span  id="tier">tier</span> camera, how would you like to pack it?
+				</p>
+            </div>
+			<form action="payment.html" class="wrapper centered">
+            <div class="wrapper centered">
+                <div id="qstnSet1">
+                    <h4>Select your level of proficiency</h4>
+                    <span>
+                        <input type="radio" name="q1" value="Skip">
+                        <label for="default">Default/Skip</label><br>
+                        <input type="radio" name="q1" value="Blue">
+                        <label for="Blue">Blue</label><br>
+                        <input type="radio" name="q1" value="Pink">
+                        <label for="Pink">Pink</label><br>
+                    </span>
+                </div>
+				<button>Back</button>
+                <button>Next</button>
+			</div>
+        </section> 
+    </body>     
+</html>

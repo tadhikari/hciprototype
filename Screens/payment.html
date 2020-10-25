@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Smart Camera Vending Machine</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <meta charset="utf-16"/>
+        <link rel='stylesheet' type='text/css' media='screen' href='../main.css'>
+    </head>
+	<script src='selection.js'></script>
+    <body onload="setSelectionText();">
+        <section class="centerAlignContent">
+            <h1 id="head1"></h1>
+            <h2 id="head2"></h2>
+            <div class="wrapper centered">
+                <p>How would you like to pay?
+				</p>
+            </div>
+			<form action="thanks.html"  class="wrapper centered">
+            <div class="wrapper centered">
+                <div id="qstnSet1">                    
+                    <span>
+                        <input type="radio" name="q1" value="Cash">
+                        <label for="default">Cash</label><br>
+                        <input type="radio" name="q1" value="CreditCard">
+                        <label for="CreditCard">Credit Card</label><br>
+                        <input type="radio" name="q1" value="PayPal">
+                        <label for="PayPal">PayPal</label><br>
+						<input type="radio" name="q1" value="MovilePayment">
+                        <label for="MovilePayment">Movile Payment</label><br>
+                    </span>
+                </div>
+				<button>Back</button>
+                <button>Next</button>
+			</div>
+        </section> 
+    </body>     
+</html>
