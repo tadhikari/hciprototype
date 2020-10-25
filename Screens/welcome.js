@@ -22,10 +22,12 @@ window.onload = (event) => {
         if(self.parent.currentLanguageTag == null) {
             currentLanguageTag = document.getElementsByClassName('languageType')[0];
             currentLanguageTag.classList.add('selectedLanguage');
-            self.parent.currentLanguageTag = currentLanguageTag;
+            self.parent.currentLanguageTag = currentLanguageTag.id;
         }
         else {
-            currentLanguageTag = self.parent.currentLanguageTag;
+            console.log('I here')
+            currentLanguageTag = document.getElementById(self.parent.currentLanguageTag);
+            currentLanguageTag.classList.add('selectedLanguage');
         }
 
         loadPageText();
@@ -43,7 +45,7 @@ loadPageText = function() {
         
         h1.innerHTML = self.parent.text[languageSelected][currentPage]['h1'];
         h2.innerHTML = self.parent.text[languageSelected][currentPage]['h2'];
-        next.innerText = self.parent.text[languageSelected][currentPage]['NEXT'];
+        next.innerText = self.parent.text[languageSelected]['NEXT'];
         
 
 
@@ -53,6 +55,7 @@ changeLanguageSelectionOnScreen = function(placement){
     currentLanguageTag.classList.remove('selectedLanguage');
     let languages = document.getElementsByClassName('languageType');
     currentLanguageTag = languages[placement];
+    self.parent.currentLanguageTag = currentLanguageTag.id;
     currentLanguageTag.classList.add('selectedLanguage');
 };
 
@@ -66,9 +69,11 @@ changeLanguage = function(language,placement){
 
 changePage = function(nextPage){
 
+
     iframe = self.parent.document.getElementById('childrenScreens');
 
     iframe.src = './Screens/Questions.html'
 
 
 }
+
