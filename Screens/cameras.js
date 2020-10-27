@@ -256,6 +256,21 @@ displayCamera = function() {
 
 	}
 
+}
 
 
+
+back = function(){
+
+
+
+
+}
+
+
+pay = function(){
+
+	
+
+	
 }

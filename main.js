@@ -4,6 +4,8 @@
 self.languageSelected = null;
 self.currentLanguageTag = null;
 self.currentPage = null;
+self.cameraSelection = null;
+self.questionAnswer = null;
 
 self.text = {
 
@@ -47,7 +49,7 @@ self.text = {
             },
 
         },
-        'PAYMENT':{}
+        'CAMERA':{}
     },
     'SPANISH':{
 
@@ -89,7 +91,7 @@ self.text = {
             },
 
         },
-        'PAYMENT':{}
+        'CAMERA':{}
 
     },
     'RUSSIAN':{
@@ -133,7 +135,7 @@ self.text = {
             },
 
         },
-        'PAYMENT':{}
+        'CAMERA':{}
 
 
     }
