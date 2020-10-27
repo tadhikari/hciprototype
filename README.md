@@ -17,7 +17,7 @@ after that just run the runserver.bat file on the repository to run the localser
 
 @Micheal
 in a JS file create an object like this:
-self.selectedCamera = {'Camera':Canon Rebel,'Price': 500, 'Image':'demo.jpg'}; // for now you can use any image for testing
+selectedCamera = {'Camera':'Canon Rebel','Price': 500, 'Image':'demo.jpg'}; // for now you can use any image for testing
 use this as a dummy object to create the payment screen.
 imagine this was the camera that was selected by the user and was being passed on from the previous screen.
 When I complete the camera selection screen, a similar object will be passed to the payment screen.
