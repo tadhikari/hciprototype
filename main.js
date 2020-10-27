@@ -30,7 +30,7 @@ self.text = {
             'h1':`Please answer the following questions`,
             'h2':`Based on your response, the system will determine best camera picks for you`,
             'SET1': {
-                'QSTN':'Select your level of proficiency',
+                'QSTN':'Select user level of proficiency',
                 'Q1':'Beginner',
                 'Q2':'Intermediate',
                 'Q3':'Advanced'
