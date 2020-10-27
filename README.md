@@ -11,7 +11,7 @@ after node installation has completed
 
 type this on command prompt and wait till browser-sync installation sucessfully completes
 
-##npm install -g browser-sync
+## npm install -g browser-sync
 
 after that just run the runserver.bat file on the repository to run the localserver. 
 
