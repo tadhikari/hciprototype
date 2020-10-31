@@ -1,3 +1,6 @@
+
+var isCameraSelected = false;
+
 var camerapick = {
 
 	'beginner':{
@@ -254,6 +257,17 @@ window.onload = (event) => {
 
 }
 
+cameraSelected = function(){
+
+	if(!isCameraSelected){
+
+		isCameraSelected = true;
+		document.getElementById('next1').disabled = false;
+
+	}
+
+}
+
 
 loadPageText = function(){
 
@@ -294,8 +308,21 @@ displayCamera = function() {
 
 nextPage = function(){
 
+	cameras = document.querySelectorAll('input[name="camera"]');
+	selected = null;
+	for(i=0;i<cameras.length;i++){
+		if(cameras[i].checked){
+			selected = cameras[i];
+		}
+	}
 
+	self.parent.cameraSelection = {'Camera':selected.value,'Price':parseInt(selected.getAttribute("data-price")),'Logo':selected.getAttribute("data-logo")};
 
+	iframe = self.parent.document.getElementById('childrenScreens');
+
+    iframe.src = './Screens/payment.html';
+
+    //console.log(self.parent.cameraSelection);
 
 }
 

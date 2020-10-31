@@ -120,19 +120,6 @@ nextPage = function() {
 }
 
 
-selected = function() {
-
-
-
-
-
-
-
-}
-
-
-
-
 
 previousPage = function(){
 
