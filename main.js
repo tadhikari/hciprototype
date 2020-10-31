@@ -49,7 +49,16 @@ self.text = {
             },
 
         },
-        'CAMERA':{}
+        'CAMERA':{
+
+            'h1':`Please select a camera`,
+            'h2':`These camera have been selected based on your answers`,
+            'PAY':`Continue to Payment`,
+            'BACK':`Back`
+
+
+
+    }
     },
     'SPANISH':{
 
@@ -91,7 +100,14 @@ self.text = {
             },
 
         },
-        'CAMERA':{}
+        'CAMERA':{
+
+            'h1':`Seleccione una cámara`,
+            'h2':`Estas cámaras se han seleccionado en función de sus respuestas`,
+            'PAY':`Continuar con el pago`,
+
+
+        }
 
     },
     'RUSSIAN':{
@@ -135,7 +151,13 @@ self.text = {
             },
 
         },
-        'CAMERA':{}
+        'CAMERA':{
+
+            'h1':`Пожалуйста, выберите камеру`,
+            'h2':`Эти камеры были выбраны на основе ваших ответов`,
+            'PAY':`Продолжить оплату`,
+
+        }
 
 
     }

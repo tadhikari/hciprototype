@@ -246,10 +246,31 @@ var camerapick = {
 
 window.onload = (event) => {
 
-
-	displayCamera();
+	self.parent.currentPage = "CAMERA";
 	loadPageText();
+	displayCamera();
 	
+	
+
+}
+
+
+loadPageText = function(){
+
+	let h1 = document.getElementById('head1');
+    let h2 = document.getElementById('head2');
+
+    h1.innerHTML = self.parent.text[self.parent.languageSelected][self.parent.currentPage]['h1'];
+    h2.innerHTML = self.parent.text[self.parent.languageSelected][self.parent.currentPage]['h2'];
+
+    let pay = document.getElementById('next1');
+    let back = document.getElementById('back1');
+
+    pay.innerText = self.parent.text[self.parent.languageSelected][self.parent.currentPage]['PAY'];
+    back.innerText = self.parent.text[self.parent.languageSelected]['BACK'];
+
+
+
 
 }
 
@@ -271,7 +292,7 @@ displayCamera = function() {
 
 
 
-back = function(){
+nextPage = function(){
 
 
 
