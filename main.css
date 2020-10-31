@@ -6,7 +6,7 @@
     cursor: pointer;
 }
 
-.hide {
+.hidden {
     display: none;
 }
 
@@ -15,8 +15,17 @@
 }
 
 .centered {
+    display: block;
     margin:auto auto;
     width: auto;
+}
+
+#back1 {
+    margin-right: 10px;
+}
+
+.final-button {
+    margin-top: 20px;
 }
 
 

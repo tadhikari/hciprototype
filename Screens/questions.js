@@ -69,11 +69,70 @@ loadPageText = function() {
 
 nextPage = function() {
 
+    let q1Answer = null;
+    let questionOne = document.querySelectorAll('input[name="q1"]');
+    console.log(questionOne + "hello");
+    for(let i=0;i<questionOne.length;i++){
+
+        if(questionOne[i].checked){
+            q1Answer = questionOne[i].id;
+        }
+
+    }
+
+
+
+    q2Answer = null;
+    questionTwo = document.querySelectorAll('input[name="q2"]');
+
+
+    for(let i=0;i<questionTwo.length;i++){
+
+        if(questionTwo[i].checked){
+            q2Answer = questionTwo[i].id;
+        }
+
+    }
+
+    
+
+    q3Answer = null;
+    questionThree = document.querySelectorAll('input[name="q3"]');
+
+
+    for(let i=0;i<questionThree.length;i++){
+
+        if(questionThree[i].checked){
+            q3Answer = questionThree[i].id;
+        }
+
+    }
+
+
+
+    self.parent.questionAnswer = [q1Answer,q2Answer,q3Answer];
+    //console.log(self.parent.questionAnswer)
+
 	iframe = self.parent.document.getElementById('childrenScreens');
 
     iframe.src = './Screens/cameras.html'
 
 }
+
+
+selected = function() {
+
+
+
+
+
+
+
+}
+
+
+
+
 
 previousPage = function(){
 
