@@ -177,6 +177,40 @@ p.languageType:nth-of-type(2) {
   padding: 2px 16px;
 }
 
+/*
+    
+    Payment Screen Initial
+
+*/
+
+
+#cameraImage {
+
+    width: 300px;
+    border: 1px solid black;
+    height: 300px;
+
+}
+
+#cameraPrice,#cameraName {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*feedback screen css*/
 

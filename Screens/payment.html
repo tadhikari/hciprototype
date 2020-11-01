@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Smart Camera Vending Machine</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <meta charset="utf-16"/>
+        <link rel='stylesheet' type='text/css' media='screen' href='../main.css'>
+    </head>
+    <body>
+        <section class="centerAlignContent">
+            <h1 id="head1"></h1>
+            <h2 id="head2"></h2>
+            <div class="wrapper">
+                <div id="cameraImage" class="bodered centered">
+                  <img src="" alt="Your camera is displayed here" style="width:100%" id="cameraimage">  
+                </div>
+                <div class=""><h3 id="cameraName">Dummy Camera Name</h3></div>
+                <div class=""><h4 id="cameraPrice">US$ 500</h4></div>
+            </div>
+            <div class="centered">
+            <span id="paymenttype">Select your method of payment</span><br><br>
+            <input type="checkbox" id="cashpayment" name="mop" value="Cash" onclick="mopSelect()">
+            <label for="cashpayment" id="cash">Cash</label><br>
+            <input type="checkbox" id="cardpayment" name="mop" value="Card" onclick="mopSelect()">
+            <label for="cashpayment" id="card">Card</label><br>
+            </div>
+            <div class="centered final-button">
+                
+                <button id="back1" onclick="previousPage()">Back</button><button id="next1" onclick="nextPage()" disabled onclick="pay()">Next</button>
+
+            </div>
+        </section> 
+    </body>
+     <script src="payment.js"></script>
+     
+   
+</html>

@@ -6,6 +6,7 @@ self.currentLanguageTag = null;
 self.currentPage = null;
 self.cameraSelection = null;
 self.questionAnswer = null;
+self.pageQueue = null;
 
 self.text = {
 
@@ -55,10 +56,18 @@ self.text = {
             'h2':`These camera have been selected based on your answers`,
             'PAY':`Continue to Payment`,
             'BACK':`Back`
+        },
 
+        'PAYMENTSELECTION':{
 
+           'h1':'Please pick your desired method of payment',
+           'h2':'You have selcted the following camera:',
+           'MOP':'You may select a single payment method or multiple',
+           'CASH':'Cash',
+           'CARD':'Credit/ Debit Card'
 
-    }
+        }
+
     },
     'SPANISH':{
 
@@ -107,7 +116,19 @@ self.text = {
             'PAY':`Continuar con el pago`,
 
 
+        },
+
+       'PAYMENTSELECTION':{
+
+            'h1':'Elija el método de pago que desee',
+            'h2':'Ha seleccionado la siguiente cámara:',
+            'MOP':'Puede seleccionar un método de pago único o varios',
+            'CASH':'Efectivo',
+            'CARD':'Tarjeta de crédito / débito'
+
         }
+
+
 
     },
     'RUSSIAN':{
@@ -156,6 +177,16 @@ self.text = {
             'h1':`Пожалуйста, выберите камеру`,
             'h2':`Эти камеры были выбраны на основе ваших ответов`,
             'PAY':`Продолжить оплату`,
+
+        },
+
+       'PAYMENTSELECTION':{
+
+            'h1':'Пожалуйста, выберите желаемый способ оплаты',
+            'h2':'Вы выбрали следующую камеру:',
+            'MOP':'Вы можете выбрать один способ оплаты или несколько',
+            'CASH':'Наличные',
+            'CARD':'Кредитная / дебетовая карта'
 
         }
 
