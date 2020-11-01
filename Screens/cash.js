@@ -6,8 +6,8 @@ window.onload = (event) => {
 
 	self.parent.currentPage = 'CASH';
 	loadPageText();
-	self.parent.pageQueue.pop('cash.html')
-
+	self.parent.pageQueue.splice(0,1);
+	
 
 }
 
@@ -56,6 +56,9 @@ validityCheck = function() {
 
 nextPage = function() {
 
+
+	console.log(self.parent.pageQueue);
+
 	if(validityCheck()) {
 
 		let input = document.getElementById('cashinput');
@@ -83,7 +86,14 @@ nextPage = function() {
 
 				user enterd amount that is less than balance and had selected multiple ways of payment
 
-				`)
+				`);
+
+			// console.log()
+
+			iframe = self.parent.document.getElementById('childrenScreens');
+
+    		iframe.src = './Screens/'+self.parent.pageQueue[0];
+
 
 		}
 

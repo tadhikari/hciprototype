@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Smart Camera Vending Machine</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <meta charset="utf-16"/>
+        <link rel='stylesheet' type='text/css' media='screen' href='../main.css'>
+    </head>
+    <body>
+        <section class="centerAlignContent">
+            <h1 id="head1">Card Payment</h1>
+            <h2 id="head2">Remaining Balance: </h2>
+            <div class="wrapper">
+                <p id="insertcashtext" class="centered">Please swipe your card and enter 4 digit pin</p>
+                <p id="justasimulation">(Drag the pointer to simulate card swipe)</p>
+                <input type="range" name="cardswipe" class="centered" value="0" id="cardswipe">
+                <input type="text" name="cashinput" class="centered" value="0000" id="cashinput" maxlength="4">
+            </div>
+             <div class="centered final-button"><button id="next1" onclick="nextPage()">Pay</button></div>
+        </section> 
+    </body>
+     <script src='card.js'></script>
+     
+   
+</html>

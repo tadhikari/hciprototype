@@ -7,7 +7,7 @@ self.currentPage = null;
 self.cameraSelection = null;
 self.questionAnswer = null;
 self.pageQueue = null;
-self.parent.remainingBalance = 0;
+self.remainingBalance = 0;
 
 self.text = {
 
@@ -77,6 +77,19 @@ self.text = {
             'simulation':'(Just a simulation)',
             'pay':'Pay',
             'invalidamount':'Please enter a valid amount!'
+
+        },
+
+
+        'FEEDBACK':{
+
+            'h1':'Payment was sucessful, thank you for shopping with us!',
+            'h2':'Please rate your shopping experience.',
+            'camera':'The camera ',
+            'change':'and your change of: ',
+            'dispense':'is being dispensed',
+            'rate':'Please rate:',
+            'submit':'Submit'
 
         }
 
