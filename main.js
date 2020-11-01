@@ -7,6 +7,7 @@ self.currentPage = null;
 self.cameraSelection = null;
 self.questionAnswer = null;
 self.pageQueue = null;
+self.parent.remainingBalance = 0;
 
 self.text = {
 
@@ -66,7 +67,20 @@ self.text = {
            'CASH':'Cash',
            'CARD':'Credit/ Debit Card'
 
+        },
+
+        'CASH': {
+
+            'h1':'Cash Payment',
+            'h2':'Remaining Balance:',
+            'insert':'Please insert the cash amount in the text box',
+            'simulation':'(Just a simulation)',
+            'pay':'Pay',
+            'invalidamount':'Please enter a valid amount!'
+
         }
+
+
 
     },
     'SPANISH':{
@@ -125,6 +139,17 @@ self.text = {
             'MOP':'Puede seleccionar un método de pago único o varios',
             'CASH':'Efectivo',
             'CARD':'Tarjeta de crédito / débito'
+
+        },
+
+       'CASH': {
+
+            'h1':'Pago en efectivo',
+            'h2':'Balance restante:',
+            'insert':'Please insert the cash amount in the text box',
+            'simulation':'(Solo una simulación)',
+            'pay':'Pagar',
+            'invalidamount':'Ingrese una cantidad válida!'
 
         }
 
@@ -188,6 +213,17 @@ self.text = {
             'CASH':'Наличные',
             'CARD':'Кредитная / дебетовая карта'
 
+        },
+
+       'CASH': {
+
+            'h1':'Наличный расчет',
+            'h2':'Остаток средств:',
+            'insert':'Пожалуйста, введите сумму наличных в текстовое поле',
+            'simulation':'Просто симуляция',
+            'pay':'Платить',
+            'invalidamount':'Пожалуйста, введите действительную сумму!'
+
         }
 
 
@@ -219,7 +255,7 @@ displayToggle = function(tag){
 goBackToHome = function() {
 
     
-
+    
 
 
 

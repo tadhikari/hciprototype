@@ -5,6 +5,7 @@ window.onload = (event) => {
 
 
 	self.parent.currentPage = 'PAYMENTSELECTION';
+     self.parent.pageQueue = [];
 	loadPageText();
      loadCamera();
      
@@ -76,6 +77,29 @@ previousPage = function(){
     iframe = self.parent.document.getElementById('childrenScreens');
 
     iframe.src = './Screens/cameras.html';
+
+
+
+}
+
+nextPage = function() {
+
+     let checkboxes = document.querySelectorAll('input[name="mop"]');
+     
+     if(checkboxes[0].checked){
+          self.parent.pageQueue.push('cash.html')
+     }
+     if(checkboxes[1].checked){
+          self.parent.pageQueue.push('card.html')
+     }
+
+     self.parent.remainingBalance = self.parent.cameraSelection['Price'];
+
+
+    iframe = self.parent.document.getElementById('childrenScreens');
+
+    iframe.src = './Screens/'+self.parent.pageQueue[0];
+
 
 
 
