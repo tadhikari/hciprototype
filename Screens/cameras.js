@@ -59,7 +59,7 @@ var camerapick = {
 
 			'basic':[
 
-				'WB2100','SIGMADP2',''
+				'WB2100','SIGMADP2','NIKONP100'
 
 			],
 
@@ -323,6 +323,17 @@ nextPage = function(){
     iframe.src = './Screens/payment.html';
 
     //console.log(self.parent.cameraSelection);
+
+}
+
+previousPage = function() {
+
+
+	iframe = self.parent.document.getElementById('childrenScreens');
+
+    iframe.src = './Screens/Questions.html';
+
+
 
 }
 

@@ -1,6 +1,5 @@
 
 
-isMethodOfPaymentSelected = false;
 
 window.onload = (event) => {
 
@@ -8,7 +7,7 @@ window.onload = (event) => {
 	self.parent.currentPage = 'PAYMENTSELECTION';
 	loadPageText();
      loadCamera();
-     	
+     
 
 }
 
@@ -69,5 +68,17 @@ mopSelect = function(){
 
 
 
+}
+
+previousPage = function(){
+
+
+    iframe = self.parent.document.getElementById('childrenScreens');
+
+    iframe.src = './Screens/cameras.html';
+
+
 
 }
+
+
