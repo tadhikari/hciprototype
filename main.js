@@ -85,11 +85,28 @@ self.text = {
 
             'h1':'Payment was sucessful, thank you for shopping with us!',
             'h2':'Please rate your shopping experience.',
-            'camera':'The camera ',
+            'camera':'The camera with reciept',
             'change':'and your change of: ',
             'dispense':'is being dispensed',
             'rate':'Please rate:',
             'submit':'Submit'
+
+        },
+
+
+       'CARD': {
+
+            'h1':'Card Payment',
+            'h2':'Remaining Balance:', 
+            'pin':'Please swipe your card and enter 4 digit pin',
+            'simulation':'(Drag the pointer to simulate card swipe)',
+            'pay':'Pay',
+            'fourzero':'Pin cannot be 4 zeros',
+            'lessthanfour':'Pin cannot be less than 4 digits',
+            'invalidPin':'Invalid pin number',
+            'invalidLength':'Pin has to be 4 digits long',
+            'cardswipe':'Please swipe your card properly'
+
 
         }
 
@@ -164,6 +181,34 @@ self.text = {
             'pay':'Pagar',
             'invalidamount':'Ingrese una cantidad válida!'
 
+        },
+
+       'FEEDBACK':{
+
+            'h1':'El pago fue exitoso, ¡gracias por comprar con nosotros!',
+            'h2':'Califique su experiencia de compra.',
+            'camera':'La cámara con recibo ',
+            'change':'y tu cambio de: ',
+            'dispense':'Está siendo dispensado',
+            'rate':'Por favor, valora:',
+            'submit':'Enviar'
+
+        },
+
+        'CARD': {
+
+            'h1':'Pago con tarjeta',
+            'h2':'Balance restante:', 
+            'pin':'Deslice su tarjeta e ingrese un PIN de 4 dígitos',
+            'simulation':'(Arrastre el puntero para simular el deslizamiento de la tarjeta)',
+            'pay':'Pagar',
+            'fourzero':'El pin no puede tener 4 ceros',
+            'lessthanfour':'El PIN no puede tener menos de 4 dígitos',
+            'invalidPin':'Número de PIN no válido',
+            'invalidLength':'El PIN debe tener 4 dígitos',
+            'cardswipe':'Pase su tarjeta correctamente'
+
+
         }
 
 
@@ -237,7 +282,37 @@ self.text = {
             'pay':'Платить',
             'invalidamount':'Пожалуйста, введите действительную сумму!'
 
+        },
+
+        'FEEDBACK':{
+
+
+            'h1':'Оплата прошла успешно, спасибо за покупки у нас!',
+            'h2':'Пожалуйста, оцените свой опыт покупок.',
+            'camera':'Камера с рецептом ',
+            'change':'и ваше изменение: ',
+            'dispense':'раздается',
+            'rate':'Пожалуйста, оцените:',
+            'submit':'отправить'
+
+        },
+
+        'CARD': {
+
+            'h1':'Оплата картой',
+            'h2':'Остаток средств: ', 
+            'pin':'Проведите по карте и введите 4-значный PIN-код.',
+            'simulation':'(Перетащите указатель, чтобы имитировать считывание карты)',
+            'pay':'Платить',
+            'fourzero':'Пин не может состоять из 4 нулей',
+            'lessthanfour':'Пин-код не может быть меньше 4 цифр',
+            'invalidPin':'Неверный пин-код',
+            'invalidLength':'PIN-код должен состоять из 4 цифр.',
+            'cardswipe':'Пожалуйста, проведите карту правильно'
+
+
         }
+
 
 
     }

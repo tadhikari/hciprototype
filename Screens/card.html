@@ -13,8 +13,8 @@
             <div class="wrapper">
                 <p id="insertcashtext" class="centered">Please swipe your card and enter 4 digit pin</p>
                 <p id="justasimulation">(Drag the pointer to simulate card swipe)</p>
-                <input type="range" name="cardswipe" class="centered" value="0" id="cardswipe">
-                <input type="text" name="cashinput" class="centered" value="0000" id="cashinput" maxlength="4">
+                <input type="range" name="cardswipe" class="centered" value="0" id="cardswipe" min="0" max="10">
+                <input type="text" name="pinInput" class="centered" value="0000" id="pinInput" maxlength="4">
             </div>
              <div class="centered final-button"><button id="next1" onclick="nextPage()">Pay</button></div>
         </section> 
