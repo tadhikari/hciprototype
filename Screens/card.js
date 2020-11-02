@@ -2,6 +2,7 @@
 
 //self.parent.
 var sliderValue = 0;
+var self.parent.currentPage = 'CARD';
 var slider = document.getElementById("cardswipe");
 var input = document.getElementById("pinInput");
 var pay = document.getElementById("next1");
@@ -32,20 +33,18 @@ sliderCheck = function() {
 
 pinAdded = function() {
 
-	console.log(isNaN(input.value));
-
-	console.log()
+	
 
 	if(input.value === '0000'){
 
-		alert(`four zero`);
+		alert(` ${self.parent.text[self.parent.languageSelected][self.parent.currentPage]['fourzero']} `);
 		return false;
 
 	}
 
 	else if(input.value.length < 4){
 
-		alert(`less than 4`); // pin should be 4 digit long
+		alert(`${self.parent.text[self.parent.languageSelected][self.parent.currentPage]['lessthanfour']}`); // pin should be 4 digit long
 		return false;
 	}
 
