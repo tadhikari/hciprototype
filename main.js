@@ -17,8 +17,7 @@ self.text = {
         please contact our technical support team at
         888-888-8888 or smartvending@email.com`,
 
-        'HOME':`Are you sure you want to return to the Home Screen?
-        If you are half way in the payment process, the money will be refunded to you.`,
+        'HOME':`Are you sure you want to return to the Home Screen? If you are half way in the payment process, the money will be refunded to you.`,
 
         'NEXT':'Next',
         'BACK':'Back',
@@ -87,9 +86,10 @@ self.text = {
             'h2':'Please rate your shopping experience.',
             'camera':'The camera with reciept',
             'change':'and your change of: ',
-            'dispense':'is being dispensed',
+            'dispense':' is being dispensed',
             'rate':'Please rate:',
-            'submit':'Submit'
+            'submit':'Submit',
+            'redirect':`You are now being redirected to the home screen`
 
         },
 
@@ -105,7 +105,8 @@ self.text = {
             'lessthanfour':'Pin cannot be less than 4 digits',
             'invalidPin':'Invalid pin number',
             'invalidLength':'Pin has to be 4 digits long',
-            'cardswipe':'Please swipe your card properly'
+            'cardswipe':'Please swipe your card properly',
+            'error':'Some error occured, try again'
 
 
         }
@@ -124,8 +125,7 @@ self.text = {
 
         'BACK':'Atrás',
 
-        'HOME':`¿Está seguro de que desea volver a la pantalla de inicio?
-        Si se encuentra a la mitad del proceso de pago, se le reembolsará el dinero.`,
+        'HOME':`¿Está seguro de que desea volver a la pantalla de inicio? Si se encuentra a la mitad del proceso de pago, se le reembolsará el dinero.`,
         
         'WELCOME':{'h1':`Bienvenido a la máquina expendedora inteligente`,
                    'h2':`Elija el idioma de su elección para continuar`,
@@ -176,7 +176,7 @@ self.text = {
 
             'h1':'Pago en efectivo',
             'h2':'Balance restante:',
-            'insert':'Please insert the cash amount in the text box',
+            'insert':'Ingrese el monto en efectivo en el cuadro de texto',
             'simulation':'(Solo una simulación)',
             'pay':'Pagar',
             'invalidamount':'Ingrese una cantidad válida!'
@@ -191,7 +191,8 @@ self.text = {
             'change':'y tu cambio de: ',
             'dispense':'Está siendo dispensado',
             'rate':'Por favor, valora:',
-            'submit':'Enviar'
+            'submit':'Enviar',
+            'redirect':`Ahora se le redirige a la pantalla de inicio.`
 
         },
 
@@ -222,8 +223,7 @@ self.text = {
         свяжитесь с нашей службой технической поддержки по адресу
         888-888-8888 или smartvending@email.com`,
 
-        'HOME':`Вы уверены, что хотите вернуться на главный экран?
-        Если вы на полпути в процессе оплаты, деньги будут вам возвращены.`,
+        'HOME':`Вы уверены, что хотите вернуться на главный экран? Если вы на полпути в процессе оплаты, деньги будут вам возвращены.`,
 
         'NEXT':'следующий',
         'BACK':'Назад',
@@ -293,7 +293,8 @@ self.text = {
             'change':'и ваше изменение: ',
             'dispense':'раздается',
             'rate':'Пожалуйста, оцените:',
-            'submit':'отправить'
+            'submit':'отправить',
+            'redirect':`Теперь вы будете перенаправлены на главный экран`
 
         },
 
@@ -342,9 +343,18 @@ displayToggle = function(tag){
 
 goBackToHome = function() {
 
+    let home = confirm(`${self.text[self.languageSelected]['HOME']}`);
     
-    
+    if(home){
 
+        iframe = self.parent.document.getElementById('childrenScreens');
+
+        iframe.src = './Screens/welcome.html';
+
+
+
+
+    }
 
 
 

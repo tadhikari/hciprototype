@@ -23,12 +23,13 @@ loadPageText = function(){
     let h2 = document.getElementById('head2');
     let simulationText = document.getElementById('justasimulation');
     let pay = document.getElementById('next1'); 
+    let insertCash = document.getElementById('insertcashtext'); 
 
     h1.innerHTML = self.parent.text[self.parent.languageSelected][self.parent.currentPage]['h1'];
     h2.innerHTML = self.parent.text[self.parent.languageSelected][self.parent.currentPage]['h2'] + " US$ "+self.parent.remainingBalance;
 	simulationText.innerHTML = self.parent.text[self.parent.languageSelected][self.parent.currentPage]['simulation'];
 	pay.innerHTML = self.parent.text[self.parent.languageSelected][self.parent.currentPage]['pay'];
-
+	insertCash.innerHTML = self.parent.text[self.parent.languageSelected][self.parent.currentPage]['insert'];
 
 
 
@@ -64,6 +65,7 @@ nextPage = function() {
 		let input = document.getElementById('cashinput');
 
 		self.parent.remainingBalance = self.parent.remainingBalance - parseFloat(input.value);
+		console.log(self.parent.remainingBalance)
 
 		if(self.parent.remainingBalance>0 && self.parent.pageQueue.length == 0){
 
